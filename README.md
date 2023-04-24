@@ -1,1 +1,5 @@
 # Stock-price-prediction-using-CNN
+
+Convolutional Neural Networks (CNNs) is a deep learning model, most commonly applied to analyze images. In this project, I applied CNN to candle stick images of monthly stock data, converted to time series graphs.
+
+The CNN architecture consists of four convolution layers. In the first layer, a 64x64x1 input image is filtered by 3x3x3 kernals, with stride and padding of 1 pixel. Then, max pooling is applied with a stride of 2 pixels, followed by ReLU activation. The pooling layer reduces the dimensionality/ size of the feature maps, thereby reducing variance and computation complexity in the neural network. The following layers filter the output of the previous convolution layer using 3x3x3 kernels, with stride and padding of 1 pixel, followed by max pooling and ReLU activiation. The final output is then flattened, before applying two fully connected layers with dropout. The output layer used softmax activation. The model was trained on the Adam optimizer and binary cross entropy loss function. 
